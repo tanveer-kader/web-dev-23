@@ -3,4 +3,4 @@ How does it work? <br>
 
 ## Projects
 * Price Tires [see!](https://pricetires.netlify.app/)
-  > ***HTML, CSS*** | Responsive
+  > ***HTML, CSS*** | Responsive Desktop First
