@@ -1,2 +1,6 @@
 ﻿# web-dev-23
-How everything synchronizes?
+How does it work? <br>
+
+## Projects
+* Price Tires [see!](https://pricetires.netlify.app/)
+  > ***HTML, CSS*** | Responsive Desktop First
