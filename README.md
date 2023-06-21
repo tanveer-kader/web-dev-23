@@ -1,5 +1,5 @@
 ﻿# web-dev-23
-How everything synchronizes? <br>
+How does it work? <br>
 
 ## Projects
 * Price Tires [see!](https://pricetires.netlify.app/)
