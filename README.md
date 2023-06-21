@@ -1,5 +1,5 @@
 ﻿# web-dev-23
 How everything synchronizes? <br>
 
-##Projects
+## Projects
 * Price Tires [see!](https://pricetires.netlify.app/)
