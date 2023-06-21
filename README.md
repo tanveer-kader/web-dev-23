@@ -3,4 +3,4 @@ How everything synchronizes? <br>
 
 ## Projects
 * Price Tires [see!](https://pricetires.netlify.app/)
-  > HTML, CSS | Responsive
+  > ***HTML, CSS*** | Responsive
