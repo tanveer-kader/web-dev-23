@@ -22,6 +22,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- script -->
+    <script defer src="script.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="app.css" />
 
@@ -169,14 +172,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      $(function () {
-        $(document).scroll(function () {
-          var $nav = $("#mainNavbar");
-          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-        });
-      });
-    </script>
   </body>
 </html>
