@@ -7,4 +7,4 @@ How does it work? <br>
 * Price Tires [see!](https://pricetires.netlify.app/)
   > ***HTML, CSS*** | Responsive Desktop First
 * Museum of Candy [see!](https://museum-of-candy3.netlify.app/)
-  > ***HTML, CSS, JS*** | Responsive
+  > ***HTML, CSS, JS, Bootstrap*** | Responsive
