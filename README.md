@@ -6,3 +6,5 @@ How does it work? <br>
   > ***HTML, CSS***
 * Price Tires [see!](https://pricetires.netlify.app/)
   > ***HTML, CSS*** | Responsive Desktop First
+* Museum of Candy [see!](https://museum-of-candy3.netlify.app/)
+  > ***HTML, CSS, JS*** | Responsive
