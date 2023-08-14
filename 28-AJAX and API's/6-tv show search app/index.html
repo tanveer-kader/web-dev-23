@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"
+    ></script>
+    <script defer src="app.js"></script>
+
+    <title>TV show search</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container is-max-desktop">
+        <h1 class="title is-1 is-centered">TV Show Search</h1>
+        <p class="subtitle">search keyword or title. i.e. comedy</p>
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <form id="searchForm" class="field has-addons">
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="TV Show Title"
+                  name="query"
+                  id="search"
+                />
+              </div>
+              <div class="control">
+                <button class="button is-info">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
