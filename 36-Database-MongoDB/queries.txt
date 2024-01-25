@@ -1,0 +1,78 @@
+1. mongosh
+start mongoDB
+
+2.  use animalShelter
+use or create a new one
+
+3. show collections
+see data
+
+4. db.dogs.insertOne({name: "Charlie", age: 3, breed: "corgi", catFriendly: true})
+insert data
+
+5. db.dogs.find()
+see all data in dogs
+
+6.  db.dogs.insert([{name: "Whyatt", breed: "Golden", age: 14, catFriendly: false}, {name: "Tonya", breed: "Chihuahua", age: 17, catFriendly: true}])
+insert multiple
+
+7. show dbs or show databases
+view all dbs
+
+8.  db.dogs.find({breed: "corgi"})
+find with condition
+
+9. db.dogs.updateOne({name: 'Charlie'}, {$set: {age: 4}})
+update existing data
+
+10. db.dogs.updateOne({name: 'Charlie'}, {$set: {age: 5, breed: "Lab"}})
+update multiple values
+
+11. db.dogs.updateOne({name: "Charlie"}, {$set: {color: "chocolate"}})
+update with a nonexisting key
+
+12. db.dogs.updateMany({catFriendly: true}, {$set: {isAvailable: false}})
+update multiple items depending on a values
+
+13. db.cats.updateOne({age: 6}, {$set: {age: 7}, $currentDate: {lastChanged: true}})
+use of datetime
+
+14.  db.cats.deleteOne({name: "Blue Steele"})
+delete a entry
+
+15. db.dogs.deleteMany({isAvailable: false})
+delete multiple entries with the same value
+
+16. db.dogs.insert([ {name: "Rusty", breed: "Mutt", age: 3, weight: 25, size: "M", personality: {catFriendly: true, childFriendly: true}}, {name: "Chungus", breed:animalShelter> db.dogs.insert([ {name: "Rusty", breed: "Mutt", age: 3, weight: 25, size: "M", personality: {catFriendly: true, childFriendly: true}}, {name: "Chungus", breed: "Husky", age: 3, weight: 65, size: "L", personality: {catFriendly: false, childFriendly: true}},  {name: "Bella", breed: "Chihuahua", age: 8, weight: 7, size: "S", personality: {catFriendly: false, childFriendly: false}},  {name: "Malakai", breed: "Great Pyrenees", age: 2, weight: 110, size: "L", personality: {catFriendly: false, childFriendly: true}},  {name: "Dodger", breed: "Corgi", age: 10, weight: 31, size: "M", personality: {catFriendly: true, childFriendly: true}},  {name: "Mishka", breed: "Corgi", age: 13, weight: 27, size: "M", personality: {catFriendly: true, childFriendly: true}} ])
+enter many data, contains nested data
+
+17.  db.dogs.find({'personality.childFriendly': true})
+find based on a nested value
+
+18. db.dogs.find({'personality.childFriendly': true, size: 'M'})
+    db.dogs.find({'personality.childFriendly': true, age: 10})
+find based on a nested value and other value
+
+19. db.dogs.find({age: {$gt: 8}})
+greater than
+
+20. db.dogs.find({age: {$gte: 10}})
+greater than and equal
+
+21. db.dogs.find({age: {$lte: 10}})
+less than and equal
+
+22. db.dogs.find({breed: {$in: ["Mutt", "Corgi"]}})
+contains some value
+
+23. db.dogs.find({breed: {$in: ["Mutt", "Corgi"]}, age: {$lt: 10}})
+contains some value
+
+24.  db.dogs.find({breed: {$nin: ["Mutt", "Corgi"]}, age: {$lt: 10}})
+not contains particular values
+
+25. db.dogs.find({$or: [{'personality.catFriendly': true}, {age: {$lte: 2}}]})
+based on multple condition
+
+26. Ctrl+C
+To exit, press Ctrl+C again or Ctrl+D or type .exit
