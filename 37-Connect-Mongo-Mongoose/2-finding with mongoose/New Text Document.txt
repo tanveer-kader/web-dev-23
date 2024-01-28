@@ -1,0 +1,42 @@
+1. Movie.find({})
+
+2. Movie.find({}).then(data => console.log(data))
+to find movies desired format
+
+3. Movie.find({rating: 'PG-13'}).then(data => console.log(data))
+finding with condition
+
+4. Movie.find({year: {$gte: 2010}}).then(data => console.log(data))
+finding with condition
+
+5. Movie.find({year: {$lt: 1990}}).then(data => console.log(data))
+finding with condition
+
+6. Movie.findOne({}).then(m => console.log(m))
+finding with condition
+
+7. Movie.findById('65b3c4081dbde2a02ca6d653').then(m => console.log(m))
+
+/////////////
+Update
+
+8. Movie.updateOne({title: 'Amadeus'}, {year: 1984}).then(res => console.log(res))
+
+9. Movie.updateMany({title: {$in: ['Amadeus', 'Stand By Me']}}, {score: 10}).then(res => console.log(res))
+
+10. Movie.findOneAndUpdate({title: 'The Iron Giant'}, {score: 7.0}).then(m => console.log(m))
+doesn't return the updated data
+
+11.  Movie.findOneAndUpdate({title: 'The Iron Giant'}, {score: 7.8}, {new: true}).then(m => console.log(m))
+return updated data
+
+///////////
+Delete
+
+12.  Movie.deleteOne({title: 'Amelie'}).then(msg => console.log(msg))
+
+13. Movie.deleteMany({year: {$gte: 1999}}).then(msg => console.log(msg))
+
+14. Movie.findOneAndDelete({title: 'Alien'}).then(msg => console.log(msg))
+delete and return thats deleted
+
